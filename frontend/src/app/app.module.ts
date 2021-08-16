@@ -22,6 +22,7 @@ import { XPipePipe } from './pipe/x-pipe.pipe';
 import { LoginComponent } from './page/login/login.component';
 import { ProductEditComponent } from './page/product-edit/product-edit.component';
 import { JwtInterceptorInterceptor } from './service/jwt-interceptor.interceptor';
+import { MoviesComponent } from './page/movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { JwtInterceptorInterceptor } from './service/jwt-interceptor.interceptor
     DataTableComponent,
     XPipePipe,
     LoginComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,

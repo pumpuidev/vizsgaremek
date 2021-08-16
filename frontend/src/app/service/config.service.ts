@@ -55,6 +55,15 @@ export class ConfigService {
     },
   ];
 
+  movieColumns: ITableColumn[] = [
+    {key: "_id", title: "#"},
+    {key: "title", title: "Title"},
+    {key: "genre", title: "genre"},
+    {key: "year", title: "Year"},
+    {key: "producer", title: "Producer"},
+    {key: "watchlist", title: "Watchlist", htmlOutput: ConfigService.activeOrInactiveSign},
+  ];
+
   constructor() { }
 
   static activeOrInactiveSign(v: boolean): string {

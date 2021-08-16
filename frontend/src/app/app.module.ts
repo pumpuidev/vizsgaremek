@@ -15,15 +15,10 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { UsersComponent } from './page/users/users.component';
-// ezek ki
-import { ProductsComponent } from './page/products/products.component';
-import { OrdersComponent } from './page/orders/orders.component';
 
 import { DataTableComponent } from './common/data-table/data-table.component';
 import { XPipePipe } from './pipe/x-pipe.pipe';
 import { LoginComponent } from './page/login/login.component';
-//ez ki
-import { ProductEditComponent } from './page/product-edit/product-edit.component';
 
 import { JwtInterceptorInterceptor } from './service/jwt-interceptor.interceptor';
 import { MoviesComponent } from './page/movies/movies.component';
@@ -31,7 +26,6 @@ import { ActorsComponent } from './page/actors/actors.component';
 import { DirectorsComponent } from './page/directors/directors.component';
 import { RatingsComponent } from './page/ratings/ratings.component';
 import { MovieEditComponent } from './page/movie-edit/movie-edit.component';
-import { MovieActorComponent } from './page/movie-actor/movie-actor.component';
 import { ActorEditComponent } from './page/actor-edit/actor-edit.component';
 import { RatingEditComponent } from './page/rating-edit/rating-edit.component';
 import { DirectorEditComponent } from './page/director-edit/director-edit.component';
@@ -44,18 +38,14 @@ import { UserEditComponent } from './page/user-edit/user-edit.component';
     SideNavComponent,
     DashboardComponent,
     UsersComponent,
-    ProductsComponent,
-    OrdersComponent,
     DataTableComponent,
     XPipePipe,
     LoginComponent,
-    ProductEditComponent,
     MoviesComponent,
     ActorsComponent,
     DirectorsComponent,
     RatingsComponent,
     MovieEditComponent,
-    MovieActorComponent,
     ActorEditComponent,
     RatingEditComponent,
     DirectorEditComponent,

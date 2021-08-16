@@ -1,4 +1,4 @@
-const service = jest.mock('./DIRECTOR.route');
+const service = jest.mock('./director.route');
 
 let mockData;
 

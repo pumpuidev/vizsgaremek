@@ -16,14 +16,13 @@
 ***
 
 
-### 1. Új felhasználó oldal
+### 1. Dashboard oldal
 ***
 **1. agilis felhasználói történet:**
 > Az új felhasználók csatlakozására szolgáló oldal. Az adminisztrációs felületre be lehet jelentkezni.
 
 **Elfogadási kritérium:**
-* Meg kell adni a felhasználónevet és a jelszót,  így be lehet jelentkezni a felületre.
-* A profil nélküli felhasználóknak lehetőségük van regisztrálni, hogy ezt követően bejelentkezhessenek.
+* Alapvető információk gyűjtőhelye az alkalmazásban.
 
 
 ### 2. Login Oldal
@@ -32,23 +31,22 @@
 > Gyakorlatilag a főoldal, ahol a felhasználók be tudnak jelentkezni. 
 
 **Elfogadási kritérium:**
-* Az új felhasználó oldalról ide lehet átnavigálni, ha már van létrehozva felhasználó.
+* Meg kell adni a felhasználónevet és a jelszót,  így be lehet jelentkezni a felületre.
 * Egyszerű, letisztult a felület.
 * Be tudnak jelentkezni a már regisztrált felhassználók.
 
 
-### 3. Admin oldal
+### 3. User oldal
 ***
 **1. agilis felhasználói történet:**
-> A felhasználó saját adataid tartalmazó oldal.
+> A felhasználók adataid tartalmazó oldal.
 
 **Elfogadási kritérium:**
 * Itt tárolódnak a kötelező és az opcionális adatok a felhaszálóról.
 * Lehetősége van a felhasználónak az adatok módosítására.
-* Fel tud tölteni 1 mb-nél kisebb profilképet.
 
 
-### 4. Listázó oldal
+### 4. Movies oldal
 ***
 **1. agilis felhasználói történet:**
 > Az oldal, ahol a filmeket ki lehet listázni.
@@ -81,7 +79,7 @@
 * A felhasználó át tudja írni a film adott adataid.
 
 
-### 5. Kedvencek oldal
+### 5. Ratings oldal
 ***
 **1. agilis felhasználói történet:**
 > A felhasználó által kedvelt elemek gyűjtőhelye.
@@ -102,17 +100,8 @@
 * A felhasználó rögzíteni tudja egy 1-10-ig terjedő skálán, hogy mennyire tetszett neki a film.
 
 
-### 6. Ajánló oldal
-***
-**1. agilis felhasználói történet:**
-> Itt lehet az aktuális ajánlatból nézelődni.
 
-**Elfogadási kritérium:**
-* Megjelenik a legújabb moziban lévő filmek ajánló
-* Érdeklődés szerint be lehet állítani az ajánlókat.
-
-
-### 7. Színészek oldal
+### 6. Színészek oldal
 ***
 **1. agilis felhasználói történet:**
 > A különböző filmekhez tartoző különböző színészek nyilvántartó helye.
@@ -133,13 +122,25 @@
 * Megjelennek az összesített információk egy adott színészről.
 
 
-### 8. Impresszum oldal
+### 7. Rendezők oldal
 ***
 **1. agilis felhasználói történet:**
-> Az oldalról szóló alapvető információkat tartalmazó oldal.
+> A különböző filmekhez tartoző különböző rendezők nyilvántartó helye.
 
 **Elfogadási kritérium:**
-* Megjelennek az oldalról az alapvető információk.
+* Megjelennek a rendezők.
+
+**2. agilis felhasználói történet:**
+> Szűkíteni lehet a keresési találatokat név vagyv névrészlet megadásával.
+
+**Elfogadási kritérium:**
+* Megjelennek a rendezők a szűrés paraméterei alapján.
+
+**1. agilis felhasználói történet:**
+> Mukák szerinti kimutatás.
+
+**Elfogadási kritérium:**
+* Megjelennek az összesített információk egy adott rendezőről.
 
 
 ### Egyéb adatok

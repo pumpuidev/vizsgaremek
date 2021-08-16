@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { LoginComponent } from './page/login/login.component';
-// ezek ki
-import { OrdersComponent } from './page/orders/orders.component';
-import { ProductEditComponent } from './page/product-edit/product-edit.component';
-import { ProductsComponent } from './page/products/products.component';
+
 
 import { MoviesComponent } from './page/movies/movies.component';
 import { MovieEditComponent } from './page/movie-edit/movie-edit.component';
@@ -31,20 +28,6 @@ const routes: Routes = [
     path: 'users/edit/:id',
     component: UserEditComponent,
   },
-  //ezek ki
-  {
-    path: 'products',
-    component: ProductsComponent,
-  },
-  {
-    path: 'products/edit/:id',
-    component: ProductEditComponent,
-  },
-  {
-    path: 'orders',
-    component: OrdersComponent,
-  },
-
 
   {
     path: 'movies',

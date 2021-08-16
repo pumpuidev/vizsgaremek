@@ -33,12 +33,7 @@ mongoose
         process.exit();
     });
 
-// app.use((req, res, next) => {
-//     res.setHeader("Access-Control-Allow-Origin", "*");
-//     res.setHeader("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS, POST, PUT, DELETE, PATCH");
-//     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization");
-//     next();
-// });
+
 app.use(cors());
 app.use(morgan('combined', { stream: logger.stream }));
 app.use(express.static('public'));
@@ -49,21 +44,14 @@ app.post('/login', authHandler.login);
 app.post('/refresh', authHandler.refresh);
 app.post('/logout', authHandler.logout);
 
-app.use('/person', authenticateJwt, require('./controllers/person/person.routes'));
-app.use('/post', authenticateJwt, adminOnly, require('./controllers/post/post.routes'));
 app.use('/users', authenticateJwt, adminOnly, require('./controllers/user/user.routes'));
-app.use('/products', authenticateJwt, require('./controllers/product/product.routes'));
-app.use('/orders', authenticateJwt, adminOnly, require('./controllers/order/order.routes'));
-
 app.use('/movies', authenticateJwt, adminOnly, require('./controllers/movie/movie.routes'));
 app.use('/directors', authenticateJwt, adminOnly, require('./controllers/director/director.routes'));
 app.use('/actors', authenticateJwt, adminOnly, require('./controllers/actor/actor.routes'));
 app.use('/ratings', authenticateJwt, adminOnly, require('./controllers/rating/rating.routes'));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-// app.use('/', async (req, res, next) => {
-//     const index = fsp.readFile( `.`)
-// });
+
 
 app.use((err, req, res, next) => {
     res.status(err.statusCode);

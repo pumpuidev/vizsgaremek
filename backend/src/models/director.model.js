@@ -24,7 +24,3 @@ const DirectorSchema = mongoose.Schema({
 
 module.exports = mongoose.model('Director', DirectorSchema);
 
-/*
-{"firstName":"Gaylor","lastName":"Revans","year":2009,"movie":"Feet First","alive":true},
-
-*/

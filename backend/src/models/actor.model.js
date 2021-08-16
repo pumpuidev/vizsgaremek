@@ -24,7 +24,3 @@ const ActorSchema = mongoose.Schema({
 
 module.exports = mongoose.model('Actor', ActorSchema);
 
-/*
-{"firstName":"Clélia","lastName":"Butler","year":2009,"movie":"Cellular","alive":false},
-
-*/

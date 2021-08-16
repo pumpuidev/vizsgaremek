@@ -23,7 +23,3 @@ const RatingSchema = mongoose.Schema({
 });
 
 module.exports = mongoose.model('Rating', RatingSchema);
-
-/*
-{"movie":"Bad Company","year":2010,"favourite":true,"rating":7,"description":"enim sit amet nunc viverra"},
-*/

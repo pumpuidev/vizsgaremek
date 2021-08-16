@@ -20,14 +20,3 @@ const MovieSchema = mongoose.Schema({
 });
 
 module.exports = mongoose.model('Movie', MovieSchema);
-
-/*
-export class Movie {
-  _id: string = '';
-  title: string = '';
-  genre: string = '';
-  year: number = 0;
-  producer: string = '';
-  watchlist: boolean = true;
-}
-*/

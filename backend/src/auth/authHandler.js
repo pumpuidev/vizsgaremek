@@ -1,8 +1,5 @@
 const jwt = require('jsonwebtoken');
 
-// Biztonságosabb megoldás, az adatbázis használata.
-// Példa: https://www.npmjs.com/package/mongoose-bcrypt
-
 const Users = [
     {
         email: 'admin',

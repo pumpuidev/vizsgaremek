@@ -6,8 +6,6 @@ const Director = require('../models/director.model');
 const Rating = require('../models/rating.model');
 
 
-// const Product = require('../models/product.model');
-
 
 const seedCollection = async (model, fileName) => {
     try {
@@ -29,11 +27,6 @@ const seedCollection = async (model, fileName) => {
 
 ( async () => {
 
-  
-
-    // seedCollection(Product, 'products');
-    // seedCollection(Race, 'races');
-    // seedCollection(Service, 'services');
 
 	seedCollection(User, 'users');
     seedCollection(Movie, 'movies');

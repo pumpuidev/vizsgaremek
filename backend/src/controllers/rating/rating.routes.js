@@ -1,6 +1,6 @@
 const express = require("express");
-const movieModel = require('../../models/movie.model');
-const controller = require('../base/controller')(movieModel);
+const ratingModel = require('../../models/rating.model');
+const controller = require('../base/controller')(ratingModel);
 
 const router = express.Router();
 

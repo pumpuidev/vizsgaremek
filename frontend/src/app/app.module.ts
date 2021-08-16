@@ -15,14 +15,21 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { UsersComponent } from './page/users/users.component';
+// ezek ki
 import { ProductsComponent } from './page/products/products.component';
 import { OrdersComponent } from './page/orders/orders.component';
+
 import { DataTableComponent } from './common/data-table/data-table.component';
 import { XPipePipe } from './pipe/x-pipe.pipe';
 import { LoginComponent } from './page/login/login.component';
+//ez ki
 import { ProductEditComponent } from './page/product-edit/product-edit.component';
+
 import { JwtInterceptorInterceptor } from './service/jwt-interceptor.interceptor';
 import { MoviesComponent } from './page/movies/movies.component';
+import { ActorsComponent } from './page/actors/actors.component';
+import { DirectorsComponent } from './page/directors/directors.component';
+import { RatingsComponent } from './page/ratings/ratings.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,10 @@ import { MoviesComponent } from './page/movies/movies.component';
     XPipePipe,
     LoginComponent,
     ProductEditComponent,
-    MoviesComponent
+    MoviesComponent,
+    ActorsComponent,
+    DirectorsComponent,
+    RatingsComponent
   ],
   imports: [
     BrowserModule,

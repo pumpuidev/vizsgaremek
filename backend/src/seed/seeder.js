@@ -1,5 +1,12 @@
 const fsp = require('fs').promises;
 const User = require('../models/user.model');
+const Movie = require('../models/movie.model');
+const Actor = require('../models/actor.model');
+const Director = require('../models/director.model');
+const Rating = require('../models/rating.model');
+
+
+// const Product = require('../models/product.model');
 
 
 const seedCollection = async (model, fileName) => {
@@ -22,16 +29,16 @@ const seedCollection = async (model, fileName) => {
 
 ( async () => {
 
-    try {
-        await User.db.dropCollection('users');
-    } catch(e) {
-        console.log('USERS NOT FOUND');
-    }
+  
 
-    seedCollection(Car, 'cars');
-    seedCollection(Customer, 'customers');
-    seedCollection(Race, 'races');
-    seedCollection(Service, 'services');
+    // seedCollection(Product, 'products');
+    // seedCollection(Race, 'races');
+    // seedCollection(Service, 'services');
+
 	seedCollection(User, 'users');
+    seedCollection(Movie, 'movies');
+    seedCollection(Actor, 'actors');
+    seedCollection(Rating, 'ratings');
+    seedCollection(Director, 'directors');
 
 })();

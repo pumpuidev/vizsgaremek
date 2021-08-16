@@ -64,6 +64,33 @@ export class ConfigService {
     {key: "watchlist", title: "Watchlist", htmlOutput: ConfigService.activeOrInactiveSign},
   ];
 
+  actorColumns: ITableColumn[] = [
+    {key: "_id", title: "#"},
+    {key: "firstName", title: "First Name"},
+    {key: "lastName", title: "Last Name"},
+    {key: "year", title: "Year"},
+    {key: "movie", title: "Movie"},
+    {key: "alive", title: "Alive", htmlOutput: ConfigService.activeOrInactiveSign},
+  ];
+
+  directorColumns: ITableColumn[] = [
+    {key: "_id", title: "#"},
+    {key: "firstName", title: "First Name"},
+    {key: "lastName", title: "Last Name"},
+    {key: "year", title: "Year"},
+    {key: "movie", title: "Movie"},
+    {key: "alive", title: "Alive", htmlOutput: ConfigService.activeOrInactiveSign},
+  ];
+
+  ratingColumns: ITableColumn[] = [
+    {key: "_id", title: "#"},
+    {key: "movie", title: "Movie"},
+    {key: "year", title: "Year"},
+    {key: "favourite", title: "Favourite", htmlOutput: ConfigService.activeOrInactiveSign},
+    {key: "rating", title: "Rating"},
+    {key: "description", title: "Description"},
+  ];
+
   constructor() { }
 
   static activeOrInactiveSign(v: boolean): string {

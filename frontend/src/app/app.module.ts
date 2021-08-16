@@ -30,6 +30,12 @@ import { MoviesComponent } from './page/movies/movies.component';
 import { ActorsComponent } from './page/actors/actors.component';
 import { DirectorsComponent } from './page/directors/directors.component';
 import { RatingsComponent } from './page/ratings/ratings.component';
+import { MovieEditComponent } from './page/movie-edit/movie-edit.component';
+import { MovieActorComponent } from './page/movie-actor/movie-actor.component';
+import { ActorEditComponent } from './page/actor-edit/actor-edit.component';
+import { RatingEditComponent } from './page/rating-edit/rating-edit.component';
+import { DirectorEditComponent } from './page/director-edit/director-edit.component';
+import { UserEditComponent } from './page/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,13 @@ import { RatingsComponent } from './page/ratings/ratings.component';
     MoviesComponent,
     ActorsComponent,
     DirectorsComponent,
-    RatingsComponent
+    RatingsComponent,
+    MovieEditComponent,
+    MovieActorComponent,
+    ActorEditComponent,
+    RatingEditComponent,
+    DirectorEditComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,

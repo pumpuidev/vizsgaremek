@@ -40,20 +40,14 @@ export class UserEditComponent implements OnInit {
   }
 
   setForm(): void {
-    /*
-    _id: string = '';
-  name: string = '';
-  description: string = '';
-  price: number = 0;
-  */
+
     this.fields = [
       new InputField({key: '_id', label: '', type: 'hidden', value: this.user._id}),
-      new InputField({key: 'firstName', label: 'First Name', type: 'text', value: this.user.firstName,
-        validators: [Validators.required, Validators.minLength(4), Validators.pattern(/^[A-Ű]{1}.*$/)], errorMessage: 'Name is required.'}),
-        new InputField({key: 'lastName', label: 'Last Name', type: 'text', value: this.user.lastName,
-        validators: [Validators.required, Validators.minLength(4), Validators.pattern(/^[A-Ű]{1}.*$/)], errorMessage: 'Name is required.'}),
-      new TextareaField({key: 'email', label: 'Email', value: this.user.email}),
-      // new InputField({key: 'price', label: 'Price', type: 'number', value: (this.user.price as unknown as string)}),
+      new InputField({key: 'firstName', label: 'First Name', type: 'text', value: this.user.firstName as string}),
+      new InputField({key: 'lastName', label: 'Last Name', type: 'text', value: this.user.lastName as string}),
+      new InputField({key: 'email', label: 'Email', type: 'text', value: this.user.email as string}),
+      new InputField({key: 'address', label: 'Address', type: 'text', value: this.user.address as string}),
+      // new InputField({key: 'active', label: 'Active', type: 'boolean', value: this.user.active as boolean}),
     ];
   }
 

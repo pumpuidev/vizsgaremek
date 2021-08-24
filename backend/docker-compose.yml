@@ -1,7 +1,7 @@
 version: "3"
 services: 
     app:
-        container_name: frontend_api_vizsgaremek_demo
+        container_name: vizsgaremek_container
         build: 
             dockerfile: Dockerfile
             context: .
